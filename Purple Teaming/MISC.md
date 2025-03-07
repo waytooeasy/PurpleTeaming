@@ -4,3 +4,6 @@
 
 	smbclient:
 		 smbclient \\\\10.129.204.151\\Share -U eagle/administrator%Slavi123
+
+   	winr:
+    		Invoke-Command -ComputerName "Target-PC" -ScriptBlock { net share /delete "ShareName" /y } -Credential (Get-Credential)
