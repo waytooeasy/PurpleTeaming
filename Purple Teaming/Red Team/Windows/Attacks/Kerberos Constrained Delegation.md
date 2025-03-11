@@ -5,6 +5,9 @@
 	
 		Enumerate who has DELEGATIONS property:
 			powershell-sessionmsds-allowedtodelegateto  
+		Uses powerview to enum:
+			PowerView-main.ps1
+			Get-NetUser -TrustedToAuth`
 		if we already compromised the service account who delegates, we can do a ptt attack.
 		Hash the pass to NTLM if necessary
 		Start with Rubeus ptt and s4u attack to generate a in memory  privlege escalated user delegation example:
